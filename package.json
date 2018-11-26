@@ -1,0 +1,26 @@
+{
+  "name": "ui-components",
+  "version": "1.0.0",
+  "description": "UI-components using custom elements in vanilla javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhankumar028/custom-elements.git"
+  },
+  "keywords": [
+    "custom-elements",
+    "ui-components"
+  ],
+  "author": "Madhankumar <madhankumar028@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhankumar028/custom-elements/issues"
+  },
+  "homepage": "https://github.com/madhankumar028/custom-elements#readme",
+  "dependencies": {
+    "npm-build-boilerplate": "^2.0.0"
+  }
+}
