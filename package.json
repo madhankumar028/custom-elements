@@ -4,7 +4,13 @@
   "description": "UI-components using custom elements in vanilla javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "dev": "lite-server",
+    "lint": "lint jshint src/**/**.js",
+    "test": "mocha test",
+    "pretest": "npm run lint",
+    "posttest": "echo the test has been run!",
+    "clean": "rimraf ./dist/*"
   },
   "repository": {
     "type": "git",
@@ -12,7 +18,9 @@
   },
   "keywords": [
     "custom-elements",
-    "ui-components"
+    "ui-components",
+    "web-components",
+    "reusable-components"
   ],
   "author": "Madhankumar <madhankumar028@gmail.com>",
   "license": "ISC",
@@ -21,6 +29,12 @@
   },
   "homepage": "https://github.com/madhankumar028/custom-elements#readme",
   "dependencies": {
-    "npm-build-boilerplate": "^2.0.0"
+    "mocha": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "jshint": "^2.9.5",
+    "lite-server": "^2.3.0"
   }
 }
